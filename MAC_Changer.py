@@ -34,6 +34,7 @@ current_mac = get_current_mac(options.interface).decode()
 print("Current MAC = " + str(current_mac))
 
 change_mac(options.interface,options.new_mac)
+print("[+] New MAC = " + options.new_mac)
 
 current_mac = get_current_mac(options.interface).decode()
 if current_mac == options.new_mac:
